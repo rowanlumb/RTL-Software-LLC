@@ -1542,8 +1542,8 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-primary.btn-simple {
-  color: #378C3F;
-  border-color: #378C3F;
+  color: #34647f;
+  border-color: #34647f;
 }
 
 .btn-primary.btn-simple:hover, .btn-primary.btn-simple:focus, .btn-primary.btn-simple:active {
