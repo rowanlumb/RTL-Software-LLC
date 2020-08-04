@@ -1519,7 +1519,7 @@ fieldset[disabled]
 .show > .btn-primary.dropdown-toggle,
 .show > .btn-primary.dropdown-toggle:focus,
 .show > .btn-primary.dropdown-toggle:hover {
-  background-color: #40a249;
+  background-color: #3A738B;
   color: #FFFFFF;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1865,13 +1865,13 @@ fieldset[disabled] .btn-neutral.active {
 .show > .btn-neutral.dropdown-toggle:focus,
 .show > .btn-neutral.dropdown-toggle:hover {
   background-color: #FFFFFF;
-  color: #40a249;
+  color: #3A738B;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 .btn-neutral:hover, .btn-neutral:focus {
-  color: #40a249;
+  color: #3A738B;
 }
 
 .btn-neutral:hover:not(.nav-link), .btn-neutral:focus:not(.nav-link) {
@@ -2580,7 +2580,7 @@ textarea.form-control:focus, textarea.form-control:active {
 }
 
 .progress-container.progress-neutral .progress {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(55, 117, 140, 0.3);
 }
 
 .progress-container.progress-neutral .progress-bar {
@@ -2593,7 +2593,7 @@ textarea.form-control:focus, textarea.form-control:active {
 }
 
 .progress-container.progress-primary .progress {
-  background: rgba(55, 140, 63, 0.4);
+  background: rgba(55, 117, 140, 0.3);
 }
 
 .progress-container.progress-primary .progress-bar {
