@@ -1559,8 +1559,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-primary.btn-link:hover, .btn-primary.btn-link:focus, .btn-primary.btn-link:active {
-  background-color: transparent;
-  color: #40a249;
+  background-color: hsla(201, 42%, 35%, 0.7);
   text-decoration: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -3398,7 +3397,7 @@ body {
 }
 
 .bg-primary {
-  background-color: #378C3F !important;
+  background-color: #34647f !important;
 }
 
 .bg-info {
