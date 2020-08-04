@@ -1537,8 +1537,8 @@ fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #378C3F;
-  border-color: #378C3F;
+  background-color: #34647f;
+  border-color: #34647f;
 }
 
 .btn-primary.btn-simple {
@@ -1548,14 +1548,14 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-primary.btn-simple:hover, .btn-primary.btn-simple:focus, .btn-primary.btn-simple:active {
   background-color: transparent;
-  color: #40a249;
-  border-color: #40a249;
+  color: #4A8FB5;
+  border-color: #4A8FB5;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 .btn-primary.btn-link {
-  color: #378C3F;
+  color: #34647f;
 }
 
 .btn-primary.btn-link:hover, .btn-primary.btn-link:focus, .btn-primary.btn-link:active {
