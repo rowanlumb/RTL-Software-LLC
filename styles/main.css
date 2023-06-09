@@ -7098,7 +7098,7 @@ Created using IcoMoon - icomoon.io
   border: 15px solid rgb(100, 157, 182);
   border-radius: 50%;
   height: 180px;
-  width: auto;
+  width: 180px;
   position: absolute;
   left: 0;
   -webkit-animation: pulsate 1.6s ease-out;
@@ -7117,7 +7117,7 @@ Created using IcoMoon - icomoon.io
   padding: 0;
   margin: 0;
   border: 15px solid transparent;
-  z-index: 9999;
+  z-index: 999;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
