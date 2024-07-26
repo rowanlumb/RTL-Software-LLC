@@ -20,6 +20,24 @@
 
 	  gtag('config', 'G-QTYZN05SL6');
 	</script>
+	<script>
+        function calculateAge(birthDate) {
+            const today = new Date();
+            const birthDateObj = new Date(birthDate);
+            let age = today.getFullYear() - birthDateObj.getFullYear();
+            const monthDiff = today.getMonth() - birthDateObj.getMonth();
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDateObj.getDate())) {
+                age--;
+            }
+            return age;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const birthDate = '1994-01-25'; // Replace with your birthdate
+            const age = calculateAge(birthDate);
+            document.getElementById('age').textContent = age;
+        });
+    </script>
   </head>
   <body id="top" class="bootstrap-switch-blue">
     <header>
@@ -83,10 +101,14 @@
         <div class="col-lg-6 col-md-12">
           <div class="card-body">
             <div class="h4 mt-0 title">Basic Information</div>
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
               <div class="col-sm-8">29</div>
-            </div>
+            </div> -->
+			<div class="row">
+				<div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
+				<div class="col-sm-8" id="age"></div>
+			</div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
               <div class="col-sm-8">rowan@rtlcoding.com</div>
@@ -206,24 +228,25 @@
                     </figcaption>
                   </figure></a>
 			  </div> -->
+			  <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="app.ctasafe.com">
+				  <figure class="cc-effect"><img src="images/ctasafe.png" alt="Image"/>
+					<figcaption>
+					  <div class="h4">FinCEN Reporting SaaS</div>
+					  <p>SaaS</p>
+					</figcaption>
+				  </figure></a>
+			  </div> 
             </div>
             <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://link.springer.com/article/10.1007/s41688-020-0036-7">
-                  <figure class="cc-effect"><img src="images/Publication.PNG" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Research Project</div>
-                      <p>Publication</p>
-                    </figcaption>
-                  </figure></a>
-              </div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="app.ctasafe.com">
-                  <figure class="cc-effect"><img src="images/ctasafe.png" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">FinCEN Reporting SaaS</div>
-                      <p>SaaS</p>
-                    </figcaption>
-                  </figure></a>
-			  </div> 
+			  <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://link.springer.com/article/10.1007/s41688-020-0036-7">
+				  <figure class="cc-effect"><img src="images/Publication.PNG" alt="Image"/>
+					<figcaption>
+					  <div class="h4">Research Project</div>
+					  <p>Publication</p>
+					</figcaption>
+				  </figure></a>
+			  </div>
+			  
 				<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://rtlcoding.com/">
 					  <figure class="cc-effect"><img src="images/rtlcoding.JPG" alt="Image"/>
 						<figcaption>
