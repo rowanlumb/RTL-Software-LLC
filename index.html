@@ -11,6 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	
     <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTYZN05SL6"></script>
 	<script>
@@ -65,11 +66,11 @@
 <div class="profile-page">
   <div class="wrapper">
     <div class="page-header page-header-small" filter-color="blue">
-      <div class="page-header-image" data-parallax="true" style="background-image: url('images/Background.jpg');"></div>
+      <div class="page-header-image" data-parallax="true" style="background-image: url('images/background.png');"></div>
       <div class="container">
         <div class="content-center">
           <div class="cc-profile-image">
-			<a style="width: 180px; height: 180px;"><img style="object-fit: cover;" src="images/rowan.jpg" alt="Image"/></a>
+			<a style="width: 180px; height: 180px;"><img style="object-fit: cover;" src="images/me.jpg" alt="Image"/></a>
 		  </div>
           <div class="h2 title">Rowan Thomas Lumb</div>
           <p class="category text-white">Developer and World Traveler</p>
@@ -80,8 +81,12 @@
       </div>
       <div class="section">
         <div class="container">
-          <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="https://x.com/rtelumb" rel="tooltip" title="Follow me on X/Twitter">
-			<i class="fa fa-twitter"></i></a>
+          <div class="button-container">
+			<a style="background-color: black" class="btn btn-round btn-lg btn-icon p-1" href="https://x.com/rtelumb" rel="tooltip" title="Follow me on X/Twitter">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x mt-3" viewBox="0 0 16 16">
+				  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+				</svg>
+			</a>
 		  </div>
         </div>
       </div>
@@ -541,7 +546,7 @@
   </div>
 </div> -->
 <div class="section" id="contact">
-  <div class="cc-contact-information" style="background-image: url('images/staticmap.png');">
+  <div class="cc-contact-information" style="background-image: url('images/background.png');">
     <div class="container">
       <div class="cc-contact">
         <div class="row">
@@ -594,7 +599,7 @@
                     <p class="mb-0"><strong>Ratchawithi</strong></p>
                     <p class="pb-2">Bangkok, Thailand</p>
                     <p class="mb-0"><strong>Phone</strong></p>
-                    <p class="pb-2">+1-654-6080</p>
+                    <p class="pb-2">+1-901-654-6080</p>
                     <p class="mb-0"><strong>Email</strong></p>
                     <p>rowan@rtlcoding.com</p>
                   </div>
@@ -609,11 +614,25 @@
 </div></div>
     </div>
     <footer class="footer">
-      <!-- <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div> -->
+      <div class="container text-center">
+		<a style="background-color: black" class="btn btn-round btn-lg btn-icon p-1" href="https://x.com/rtelumb" rel="tooltip" title="Follow me on X/Twitter">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x mt-3" viewBox="0 0 16 16">
+			  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+			</svg>
+		</a>
+	  </div>
+	  
       <div class="h4 title text-center">Rowan Thomas Lumb</div>
-      <div class="text-center text-muted">
+      <<!-- div class="text-center text-muted">
         <p>&copy; RTL Software LLC. All rights reserved.<br></p>
-      </div>
+      </div> -->
+		<div class="text-center text-muted">
+			<p>&copy; RTL Software LLC. All rights reserved.<br><span id="currentYear"></span></p>
+		</div>
+
+		<script>
+			document.getElementById("currentYear").textContent = new Date().getFullYear();
+		</script>
     </footer>
     <script src="js/core/jquery.3.2.1.min.js"></script>
     <script src="js/core/popper.min.js"></script>
