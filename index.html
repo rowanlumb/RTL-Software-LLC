@@ -15,6 +15,23 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTYZN05SL6"></script>
 	<script>
+	  document.addEventListener("DOMContentLoaded", function () {
+		const birthDate = new Date(1994, 0, 25); // January 25, 1994
+		const today = new Date();
+
+		let age = today.getFullYear() - birthDate.getFullYear();
+		const hasBirthdayPassed =
+		  today.getMonth() > birthDate.getMonth() ||
+		  (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
+
+		if (!hasBirthdayPassed) {
+		  age--;
+		}
+
+		document.getElementById("age").textContent = age;
+	  });
+	</script>
+	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
@@ -39,6 +56,30 @@
             document.getElementById('age').textContent = age;
         });
     </script>
+	
+	<style>
+	  .image-container {
+		position: relative;
+		width: 100%; /* Adjust to your desired container width */
+		height: 300px; /* Adjust to your desired height */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		background-color: #f8f9fa; /* Optional background color */
+	  }
+
+	  .image-container img {
+		position: absolute;
+		height: 100%; /* Ensures full height */
+		width: auto; /* Maintains aspect ratio */
+		object-fit: cover; /* Ensures the image fills the container */
+	  }
+
+	  .cc-effect figcaption {
+		text-align: center;
+	  }
+	</style>
   </head>
   <body id="top" class="bootstrap-switch-blue">
     <header>
@@ -73,7 +114,7 @@
 			<a style="width: 180px; height: 180px;"><img style="object-fit: cover;" src="images/me.jpg" alt="Image"/></a>
 		  </div>
           <div class="h2 title">Rowan Thomas Lumb</div>
-          <p class="category text-white">Developer and World Traveler</p>
+          <p class="category text-white">Developer, Traveler, Optimist</p>
 		  <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a>
 		  <!-- <a class="btn btn-primary smooth-scroll mr-2" href="https://github.com/rowanlumb/RTLDataSci/raw/master/Lumb_CV_Korean.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">한국의 이력서</a>
 		  <a class="btn btn-primary smooth-scroll mr-2" href="https://github.com/rowanlumb/RTLDataSci/raw/master/Lumb_CV_.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a> -->
@@ -102,7 +143,7 @@
             <div class="h4 mt-0 title">About</div>
             <p>Hello! I'm Rowan. Curious human, Web Developer and World Traveler.</p>
             <p>
-				Currently working on web development projects with clients as well as building my own SaaS on the side. I'm always open to meeting new people and hearing new ideas.
+				Currently I am working on web development projects with clients as well as building my own SaaS on the side. I'm always open to meeting new people and hearing new ideas :-)
 			</p>
           </div>
         </div>
@@ -115,7 +156,7 @@
             </div> -->
 			<div class="row">
 				<div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
-				<div class="col-sm-8" id="age"></div>
+				<div class="col-sm-8" id="age">30</div>
 			</div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
@@ -171,7 +212,7 @@
           <div class="col-md-6">
             <div class="progress-container progress-primary"><span class="progress-badge">SQL</span>
               <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div><span class="progress-value">65%</span>
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div><span class="progress-value">80%</span>
               </div>
             </div>
           </div>
@@ -222,7 +263,16 @@
                     </figcaption>
                   </figure></a></div>
 				  
-				  <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="app.ctasafe.com">
+				  <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://link.springer.com/article/10.1007/s41688-020-0036-7">
+				  <figure class="cc-effect"><img src="images/Publication.PNG" alt="Image"/>
+					<figcaption>
+					  <div class="h4">Research Project</div>
+					  <p>Publication</p>
+					</figcaption>
+				  </figure></a>
+				</div>
+				  
+				  <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="ctasafe.com">
 				  <figure class="cc-effect"><img src="images/ctasafe.png" alt="Image"/>
 					<figcaption>
 					  <div class="h4">FinCEN Reporting SaaS</div>
@@ -230,42 +280,43 @@
 					</figcaption>
 				  </figure></a>
 			  </div> 
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="http://rtlumb.pythonanywhere.com/">
+              <!-- <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="http://rtlumb42.pythonanywhere.com/">
                   <figure class="cc-effect"><img src="images/AE_Dash1_1.png" alt="Image"/>
                     <figcaption>
                       <div class="h4">Web Project</div>
                       <p>Data Science</p>
                     </figcaption>
-                  </figure></a></div>
-<!--               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://annualweather.com/monthly-temperature-averages-and-climate-for-memphis-tn/">
-                  <figure class="cc-effect"><img src="images/AnnualWeather.PNG" alt="Image"/>
-                    <figcaption>
-                      <div class="h4">Web Project</div>
-                      <p>Data Cleansing</p>
-                    </figcaption>
-                  </figure></a>
-			  </div> -->
+                  </figure></a></div> -->
+               
 			  
             </div>
             <div class="col-md-6">
-			  <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://link.springer.com/article/10.1007/s41688-020-0036-7">
-				  <figure class="cc-effect"><img src="images/Publication.PNG" alt="Image"/>
-					<figcaption>
-					  <div class="h4">Research Project</div>
-					  <p>Publication</p>
-					</figcaption>
-				  </figure></a>
-			  </div>
 			  
-				<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://rtlcoding.com/">
-					  <figure class="cc-effect"><img src="images/rtlcoding.JPG" alt="Image"/>
-						<figcaption>
-						  <div class="h4">Blog</div>
-						  <p>Data Analytics/Web Development</p>
-						</figcaption>
-					  </figure></a>
-				  </div> 
+			  
+			<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+				  <a href="https://languagebee.net">
+					<figure class="cc-effect">
+					  <div class="image-container">
+						<img src="images/phone_screen.PNG" alt="Image" />
+					  </div>
+					  <figcaption>
+						<div class="h4">Web/Mobile Project</div>
+						<p>Language Learning App</p>
+					  </figcaption>
+					</figure>
+				  </a>
+			</div>
+			  
+			<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://rtlcoding.com/">
+				<figure class="cc-effect"><img src="images/rtlcoding.JPG" alt="Image"/>
+					<figcaption>
+					  <div class="h4">Blog</div>
+					  <p>Data Analytics/Web Development</p>
+					</figcaption>
+				</figure></a>
+			  </div> 
             </div>
+			
           </div>
         </div>
       </div>
@@ -362,7 +413,7 @@
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
             <div class="h5">Web Developer/Data Analyst</div>
-            <p>Have completed an assortment of freelance work ranging from simple workflow automation using Zapier and Airtable, to data pre-treatment work for mobile app data, to full-blown end-to-end SaaS implementations.</p>
+            <p>Projwct based work ranging from simple workflow automation using Zapier and Airtable, to data pre-treatment work for mobile app data, to full-blown end-to-end SaaS implementations. Largely stopped doing data analysis projects to focus on app development but open to the right project.</p>
           </div>
         </div>
       </div>
