@@ -7272,3 +7272,39 @@ a.credit {
 .section {
   padding-bottom: 0;
 }
+
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 0.65rem;
+}
+
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+    padding: 0;
+}
+
+.social-button svg,
+.social-button img {
+    margin: 0;
+}
+
+.x-button {
+    color: white;
+    background: #000;
+}
+
+.upwork-button {
+    background: #14a800;
+}
+
+.social-button:hover {
+    color: white;
+    transform: translateY(-2px);
+}
