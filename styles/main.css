@@ -7242,23 +7242,6 @@ Created using IcoMoon - icomoon.io
   }
 }
 
-/* Footer */
-/* Social button style */
-.cc-facebook:hover i {
-  color: #3b5998;
-}
-
-.cc-twitter:hover i {
-  color: #1da1f2;
-}
-
-.cc-google-plus:hover i {
-  color: #dd4b39;
-}
-
-.cc-instagram:hover i {
-  color: #405de6;
-}
 
 /* Credit Style */
 a.credit {
@@ -7296,7 +7279,7 @@ a.credit {
 }
 
 .x-button {
-    color: white;
+    /* color: white; */
     background: #000;
 }
 
@@ -7305,6 +7288,28 @@ a.credit {
 }
 
 .social-button:hover {
-    color: white;
+    /* color: white; */
     transform: translateY(-2px);
+}
+
+.x-button {
+    background-color: #000;
+    color: #fff;
+}
+
+.x-button:hover,
+.x-button:focus {
+    background-color: #000;
+    color: #fff;
+}
+
+.upwork-button {
+    background-color: #14a800;
+    color: #fff;
+}
+
+.upwork-button:hover,
+.upwork-button:focus {
+    background-color: #14a800;
+    color: #fff;
 }
